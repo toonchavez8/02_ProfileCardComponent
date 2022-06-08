@@ -2,34 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Css Styling link -->
+  <link rel="stylesheet" href="/css/style.css">
+ 
+  <!-- title and favicon link-->
   <title>Frontend Mentor | Profile card component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+  <!-- Circles Bg Elements -->
+<div class="circles">
+  <img class="c1" src="/images/bg-pattern-top.svg" alt="circles">
+  <img class="c2" src="/images/bg-pattern-bottom.svg" alt="circles">
+</div>
+  <!-- Main Card Structure -->
+  <main>
+    <img src="/images/bg-pattern-card.svg" alt="bg-pattern-card" >
+    <div class="bodyCard">
+      <img src="/images/image-victor.jpg" alt="Profile picture">
+      <!-- User name section -->
+      <h1>Victor Crest <span>26</span></h1>
+      <h2>London</h2>
+      <hr>
+      <!-- User Stats -->
+      <div class="userStats">
+        <div class="stat">
+          <p>80K</p>
+          <span>Followers</span>
+        </div>
+        <div class="stat">
+          <p>803K</p>
+          <span>Likes</span>
+        </div>
+        <div class="stat">
+          <p>1.4K</p>
+          <span>Photos</span>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- Footer Section -->
+  <div class="areaSelect"> <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/toonchavez8" target="_blank">Miguel Chavez</a>.
+    </div>
+  </footer>
+</div>
+ 
+<script src="/JS/Animation.js"></script>
 </body>
 </html>
